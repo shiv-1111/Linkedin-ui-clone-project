@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav_bar">
+        <header>
+            <div class="icon_search">
+                <div class="main_icon">
+                    <!-- linkedin main icon -->
+                    <img id="lkdicon" src="lkdicon.svg" alt="icon">
+                </div>
+                <!-- search bar starts -->
+                <div class="search_bar">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        fill="#000000">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                    <input id="search_input" type="search" placeholder="Search">
+                </div>
+                <!-- search bar ends -->
+            </div>
+
+            <div class="nav_bar_items">
+                <ul style="list-style-type: none;">
+                    <li class="bar_items"><img src="home.svg" alt=""><br><span>Home</span></li>
+                    <li class="bar_items"><img src="network.svg" alt=""><br><span>My Network</span></li>
+                    <li class="bar_items"><img src="jobs.svg" alt=""><br><span>Jobs</span></li>
+                    <li class="bar_items"><img src="message1.svg" alt=""><br><span>Messaging</span></li>
+                    <li class="bar_items"><img src="notification.svg" alt=""><br><span>Notifications</span></li>
+                    <li class="bar_items"><img src="me.svg" alt=""><br>
+                        <div class="dropdown"><button class="dropbtn"><span>Me</span>
+                                <!-- drop down arrow starts  -->
+                                <i class="arrow down"></i>
+                                <!-- ends -->
+                            </button>
+                            <div class="dropdown_content"><a href="#">1</a><a href="#">2</a></div>
+                        </div>
+                    </li>
+                    <li class="bar_items"
+                        style="border-left: 1px solid rgba(128, 128, 128, 0.66); padding-left: 9px;padding-right: 9px;">
+                        <img src="menu.svg" alt=""><br>
+                        <div class="dropdown"><button class="dropbtn"><span>Work</span>
+                                <!-- arrow down icon -->
+                                <i class="arrow down"></i></button>
+                            <!--  -->
+                            <div class="dropdown_content"><a href="#">1</a><a href="#">2</a></div>
+                        </div>
+                    </li>
+                    <li><span style="color: blueviolet;">Try Premium for<br>free</span></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- main            content                starts -->
+    <div class="main_container">
+        <!-- left sidebar starts -->
+        <div class="sidebar_main_left">
+            <div class="sidebar_left">
+                <!--sidebar_left_top -->
+                <div class="profile" style="background-color: #222;">
+                    <!-- <div class="profile_image"> -->
+                    <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
+                        alt="">
+                    <!-- </div> -->
+                    <h3>Welcome, Shivashish!
+                        <br>
+                        <span style="color: whitesmoke; font-size: 80%; border-bottom: 2px white groove; ">Add a
+                            photo</span>
+                    </h3>
+                </div>
+                <!--left middle sidebar 1 -->
+                <div class="left_middle1">
+                    <div><span style="color: rgba(81, 80, 80, 0.803);">Connections</span><br>
+                        <span>Grow your network</span>
+                    </div>
+                    <div><img src="person.svg" alt=""></div>
+                </div>
+                <div class="left_middle2">
+                    <span
+                        style="font-weight: 100;font-size: 13px; color: rgb(76, 74, 74); letter-spacing: 0.3mm;">Access
+                        exclusive tools &
+                        insight</span><br>
+                    <span style="display: flex;align-items: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                            class="mercado-match" width="22" height="22" focusable="false">
+                            <path d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                                fill="#f8c77e"></path>
+                            <path d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                                fill="#e7a33e"></path>
+                        </svg>
+                        Try Premium for free</span>
+                </div>
+                <div class="left_bottom">
+                    <svg enable-background="new 0 0 54.981 54.981" version="1.1" viewBox="0 0 54.981 54.981" width="22"
+                        height="22" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m20.991 0h-16v53.444c0 0.495 0.598 0.742 0.948 0.393l15.052-15.052 15.052 15.052c0.35 0.35 0.948 0.102 0.948-0.393v-53.444h-16z"
+                            fill="#D75A4A" />
+                        <rect x="4.991" width="32" height="11" fill="#C03B2B" />
+
+                        <circle cx="35.768" cy="39.796" r="9.796" fill="#D0E8F9" />
+                        <path
+                            d="m39.321 30.674-12.674 12.674c0.706 1.81 1.93 3.357 3.495 4.459l13.638-13.637c-1.102-1.566-2.649-2.79-4.459-3.496z"
+                            fill="#EAF6FD" />
+                        <path
+                            d="m49.713 53.291-5.97-6.244c1.746-1.919 2.82-4.458 2.82-7.251 1e-3 -5.953-4.842-10.796-10.795-10.796s-10.796 4.843-10.796 10.796 4.843 10.796 10.796 10.796c2.442 0 4.689-0.824 6.499-2.196l6.001 6.276c0.196 0.206 0.459 0.309 0.723 0.309 0.249 0 0.497-0.092 0.691-0.277 0.399-0.381 0.413-1.015 0.031-1.413zm-22.741-13.495c0-4.85 3.946-8.796 8.796-8.796s8.796 3.946 8.796 8.796-3.946 8.796-8.796 8.796-8.796-3.946-8.796-8.796z"
+                            fill="#B1D3EF" />
+                    </svg>
+                    <span>My items</span>
+                </div>
+            </div>
+            <!-- left sidebar top part ends  -->
+            <!-- left sidebar bottom part starts  -->
+            <div class="left_sidebar_bottom">
+                <div class="sidebar_bottom_list">
+                    <ul style="list-style-type: none;">
+                        <div class="list_item">
+                            <li>Groups</li>
+                        </div>
+                        <div class="list_item"
+                            style="display: flex; justify-content: space-between; align-items: center;">
+                            <li>Events</li>
+                            <!-- + icon svg  -->
+
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
+                                fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                            </svg>
+                        </div>
+                        <div class="list_item">
+                            <li>Followed Hashtags</li>
+                        </div>
+                        <div class="list_item">Discover more</div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- left sidebar ends -->
+        <!-- main feed starts -->
+        <div class="mainfeed">
+            <!-- main feed top division -->
+            <div class="main_top">
+                <div class="main_post">
+                    <div class="post_n_img">
+                        <!-- profile image svg -->
+                        <svg viewBox="0 0 61.8 61.8" width="54px" height="54px" xmlns="http://www.w3.org/2000/svg">
+                            <g data-name="Layer 2">
+                                <g data-name="—ÎÓÈ 1">
+                                    <circle cx="30.9" cy="30.9" r="30.9" fill="#485a69" />
+                                    <path d="M23.242 38.592l15.92.209v12.918l-15.907-.121-.013-13.006z" fill="#f9dca4"
+                                        fill-rule="evenodd" />
+                                    <path
+                                        d="M53.478 51.993A30.814 30.814 0 0 1 30.9 61.8a31.225 31.225 0 0 1-3.837-.237A30.699 30.699 0 0 1 15.9 57.919a31.033 31.033 0 0 1-7.857-6.225l1.284-3.1 13.925-6.212c0 4.535 1.84 6.152 7.97 6.244 7.57.113 7.94-1.606 7.94-6.28l12.79 6.281z"
+                                        fill="#d5e1ed" fill-rule="evenodd" />
+                                    <path d="m39.165 38.778v3.404c-2.75 4.914-14 4.998-15.923-3.59z" fill-rule="evenodd"
+                                        opacity=".11" />
+                                    <path
+                                        d="m31.129 8.432c21.281 0 12.987 35.266 0 35.266-12.267 0-21.281-35.266 0-35.266z"
+                                        fill="#ffe8be" fill-rule="evenodd" />
+                                    <path
+                                        d="M18.365 24.045c-3.07 1.34-.46 7.687 1.472 7.658a31.973 31.973 0 0 1-1.472-7.658z"
+                                        fill="#f9dca4" fill-rule="evenodd" />
+                                    <path
+                                        d="M44.14 24.045c3.07 1.339.46 7.687-1.471 7.658a31.992 31.992 0 0 0 1.471-7.658z"
+                                        fill="#f9dca4" fill-rule="evenodd" />
+                                    <path
+                                        d="M43.409 29.584s1.066-8.716-2.015-11.752c-1.34 3.528-7.502 4.733-7.502 4.733a16.62 16.62 0 0 0 3.215-2.947c-1.652.715-6.876 2.858-11.61 1.161a23.715 23.715 0 0 0 3.617-2.679s-4.287 2.322-8.44 1.742c-2.991 2.232-1.66 9.162-1.66 9.162C15 18.417 18.697 6.296 31.39 6.226c12.358-.069 16.17 11.847 12.018 23.358z"
+                                        fill="#ecbe6a" fill-rule="evenodd" />
+                                    <path d="M23.255 42.179a17.39 17.39 0 0 0 7.958 6.446l-5.182 5.349L19.44 43.87z"
+                                        fill="#fff" fill-rule="evenodd" />
+                                    <path d="m39.16 42.179a17.391 17.391 0 0 1-7.958 6.446l5.181 5.349 6.592-10.103z"
+                                        fill="#fff" fill-rule="evenodd" />
+                                    <path d="M33.366 61.7q-1.239.097-2.504.098-.954 0-1.895-.056l1.031-8.757h2.41z"
+                                        fill="#3dbc93" fill-rule="evenodd" />
+                                    <path d="m28.472 51.456 2.737-2.817 2.736 2.817-2.736 2.817-2.737-2.817z"
+                                        fill="#3dbc93" fill-rule="evenodd" />
+                                </g>
+                            </g>
+                        </svg>
+                        <button><span>Start a post</span></button>
+                    </div>
+                    <div class="post_buttons">
+                        <button>
+                            <!-- gallery svg image  -->
+
+                            <svg width="48px" height="48px" viewBox="0 0 48 48" version="1"
+                                xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48">
+                                <path fill="#E65100"
+                                    d="M41,42H13c-2.2,0-4-1.8-4-4V18c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v20C45,40.2,43.2,42,41,42z" />
+                                <path fill="#F57C00"
+                                    d="M35,36H7c-2.2,0-4-1.8-4-4V12c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v20C39,34.2,37.2,36,35,36z" />
+                                <circle fill="#FFF9C4" cx="30" cy="16" r="3" />
+                                <polygon fill="#942A09" points="17,17.9 8,31 26,31" />
+                                <polygon fill="#BF360C" points="28,23.5 22,31 34,31" />
+                            </svg>
+
+                            <span>Photo</span>
+                        </button>
+                        <button>
+                            <!-- video svg image -->
+                            <svg width="48px" height="48px" enable-background="new 0 0 512 512" version="1.1"
+                                viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m464.25 477.4h-416.51c-26.326 0-47.743-21.418-47.743-47.743v-347.32c0-26.326 21.418-47.743 47.743-47.743h416.51c26.326 0 47.743 21.418 47.743 47.743 0 7.641-6.195 13.837-13.837 13.837s-13.837-6.196-13.837-13.837c0-11.066-9.003-20.068-20.068-20.068h-416.51c-11.066 0-20.068 9.003-20.068 20.068v347.32c0 11.066 9.003 20.068 20.068 20.068h416.51c11.066 0 20.068-9.003 20.068-20.068v-185.65c0-7.641 6.195-13.837 13.837-13.837s13.837 6.196 13.837 13.837v185.65c1e-3 26.327-21.417 47.744-47.742 47.744z"
+                                    fill="#507C5C" />
+                                <path
+                                    d="m13.843 82.338v69.882h484.32v-69.882c0-18.726-15.18-33.906-33.906-33.906h-416.51c-18.724 0-33.905 15.181-33.905 33.906z"
+                                    fill="#CFF09E" />
+                                <g fill="#507C5C">
+                                    <path
+                                        d="m498.16 166.06h-484.32c-7.642 0-13.837-6.196-13.837-13.837v-69.88c0-26.326 21.418-47.743 47.743-47.743h416.51c26.326 0 47.743 21.418 47.743 47.743v69.882c0 7.64-6.195 13.835-13.838 13.835zm-470.48-27.675h456.64v-56.043c0-11.066-9.003-20.068-20.068-20.068h-416.51c-11.066 0-20.068 9.003-20.068 20.068l-1e-3 56.043z" />
+                                    <path
+                                        d="m13.837 166c-3.541 0-7.083-1.352-9.784-4.053-5.404-5.404-5.404-14.165 0-19.57l103.72-103.73c5.404-5.402 14.165-5.402 19.57 0 5.404 5.404 5.404 14.165 0 19.57l-103.72 103.73c-2.703 2.702-6.245 4.053-9.786 4.053z" />
+                                    <path
+                                        d="m205.2 166.06c-3.541 0-7.082-1.351-9.784-4.053-5.404-5.402-5.405-14.164 0-19.569l103.77-103.78c5.402-5.405 14.164-5.406 19.569-1e-3 5.404 5.402 5.405 14.164 0 19.569l-103.77 103.78c-2.701 2.704-6.243 4.055-9.784 4.055z" />
+                                    <path
+                                        d="m396.58 166.06c-3.542 0-7.082-1.352-9.784-4.053-5.404-5.404-5.404-14.165 0-19.57l92.726-92.725c5.404-5.402 14.164-5.401 19.569 0 5.404 5.404 5.404 14.165 0 19.57l-92.725 92.725c-2.702 2.702-6.245 4.053-9.786 4.053z" />
+                                </g>
+                                <polygon points="202.73 225.89 336.95 305.52 202.73 385.15" fill="#CFF09E" />
+                                <path
+                                    d="m202.73 398.99c-2.362 0-4.724-0.605-6.847-1.814-4.321-2.46-6.991-7.052-6.991-12.023v-159.26c0-4.973 2.669-9.563 6.991-12.023 4.319-2.462 9.629-2.416 13.908 0.123l134.22 79.632c4.201 2.493 6.776 7.016 6.776 11.902s-2.575 9.408-6.776 11.902l-134.22 79.632c-2.176 1.287-4.618 1.933-7.061 1.933zm13.838-148.8v110.66l93.262-55.332-93.262-55.333z"
+                                    fill="#507C5C" />
+                            </svg>
+
+                            <span>Video</span>
+                        </button>
+                        <button>
+                            <!-- event svg image  -->
+                            <svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" width="48px"
+                                height="48px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10,15H6c-0.552,0-1-0.448-1-1v-4c0-0.552,0.448-1,1-1h4c0.552,0,1,0.448,1,1l0,4   c0,0.265-0.105,0.519-0.293,0.707S10.266,15,10,15z M7,13h2l0-2H7V13z"
+                                    fill="#FFCC2F" />
+                                <path
+                                    d="m26 15h-4c-0.552 0-1-0.448-1-1v-4c0-0.552 0.448-1 1-1h4c0.552 0 1 0.448 1 1v4c0 0.265-0.105 0.519-0.293 0.707s-0.441 0.293-0.707 0.293zm-3-2h2v-2h-2v2z"
+                                    fill="#FFCC2F" />
+                                <path
+                                    d="m18 15h-4c-0.552 0-1-0.448-1-1v-4c0-0.552 0.448-1 1-1h4c0.552 0 1 0.448 1 1v4c0 0.265-0.105 0.519-0.293 0.707s-0.441 0.293-0.707 0.293zm-3-2h2v-2h-2v2z"
+                                    fill="#FFCC2F" />
+                                <path
+                                    d="M10,23H6c-0.552,0-1-0.448-1-1v-4c0-0.552,0.448-1,1-1h4c0.552,0,1,0.448,1,1l0,4   c0,0.265-0.105,0.52-0.293,0.707S10.266,23,10,23z M7,21h2l0-2H7V21z"
+                                    fill="#FFCC2F" />
+                                <path
+                                    d="m26 23h-4c-0.552 0-1-0.448-1-1v-4c0-0.552 0.448-1 1-1h4c0.552 0 1 0.448 1 1v4c0 0.265-0.105 0.52-0.293 0.707s-0.441 0.293-0.707 0.293zm-3-2h2v-2h-2v2z"
+                                    fill="#FFCC2F" />
+                                <path
+                                    d="m18 23h-4c-0.552 0-1-0.448-1-1v-4c0-0.552 0.448-1 1-1h4c0.552 0 1 0.448 1 1v4c0 0.265-0.105 0.52-0.293 0.707s-0.441 0.293-0.707 0.293zm-3-2h2v-2h-2v2z"
+                                    fill="#FFCC2F" />
+                                <path
+                                    d="m30 31h-8c-0.552 0-1-0.448-1-1s0.448-1 1-1h8c0.552 0 1 0.448 1 1s-0.448 1-1 1zm-10-1c0-0.552-0.448-1-1-1h-2c-0.552 0-1 0.448-1 1s0.448 1 1 1h2c0.552 0 1-0.448 1-1zm-5 0c0-0.552-0.448-1-1-1h-12c-0.552 0-1 0.448-1 1s0.448 1 1 1h12c0.552 0 1-0.448 1-1z"
+                                    fill="#FFCC2F" />
+                                <path
+                                    d="M30,27H2c-0.552,0-1-0.448-1-1V4c0-0.552,0.448-1,1-1h28c0.552,0,1,0.448,1,1l0,22   c0,0.265-0.105,0.52-0.293,0.707S30.266,27,30,27z M3,25h26l0-20H3V25z"
+                                    fill="#FF911C" />
+                                <path
+                                    d="m16 7c-0.552 0-1-0.447-1-0.999v-4.001c0-0.552 0.448-1 1-1s1 0.448 1 1v3.999c0 0.553-0.447 1.001-1 1.001zm6.001 0c0.552 0 1-0.448 1-1.001l-1e-3 -3.999c0-0.552-0.448-1-1-1s-1 0.448-1 1v4.001c0 0.552 0.448 0.999 1.001 0.999-1e-3 0-1e-3 0 0 0zm-12 0c0.552 0 0.999-0.448 0.999-1.001v-3.999c0-0.552-0.448-1-1-1s-1 0.448-1 1v4.001c0 0.552 0.448 0.999 1.001 0.999-1e-3 0-1e-3 0 0 0z"
+                                    fill="#FFCC2F" />
+                            </svg>
+
+                            <span>Event</span>
+                        </button>
+                        <button>
+                            <!-- article svg image  -->
+                            <svg enable-background="new 0 0 503.466 503.466" version="1.1" viewBox="0 0 503.47 503.47"
+                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(3 1)">
+                                    <path
+                                        d="m410.44 327.53-68.267-68.267v102.4l68.267 68.267 68.267-68.267v-102.4l-68.267 68.267zm0-187.73v85.333l-68.267-68.267v-17.066l17.067-17.067-17.067-17.067v-34.133c0-37.547 30.72-68.267 68.267-68.267s68.267 30.72 68.267 68.267l-68.267 68.267zm68.267 85.333v34.133l-68.267 68.267v-187.73l68.267-68.267v119.47l-17.067 17.067 17.067 17.066zm-68.267 0v102.4l-68.267-68.267v-102.4l68.267 68.267z"
+                                        fill="#FFD0A1" />
+                                    <polygon
+                                        points="222.71 225.13 222.71 276.33 205.64 276.33 103.24 276.33 86.173 276.33 86.173 225.13"
+                                        fill="#80D6FA" />
+                                    <path
+                                        d="m103.24 310.47h102.4v-34.133h-102.4v34.133zm187.73 68.267v34.133h-273.07v-34.133c0-37.547 30.72-68.267 68.267-68.267h136.53c37.545 0 68.265 30.72 68.265 68.267z"
+                                        fill="#F2EDDA" />
+                                    <path
+                                        d="m290.97 412.87v51.2c0 18.773-15.36 34.133-34.133 34.133h-204.8c-18.773 0-34.133-15.36-34.133-34.133v-51.2h273.07z"
+                                        fill="#80D6FA" />
+                                </g>
+                                <path
+                                    d="m413.44 503.47c-2.56 0-4.267-1.707-4.267-4.267v-168.96l-59.733-59.733v90.453l33.28 33.28c1.707 1.707 1.707 4.267 0 5.973-1.707 1.707-4.267 1.707-5.973 0l-34.133-34.133c-0.853-0.853-0.853-1.707-0.853-3.413v-221.87c0-0.853 0.853-2.56 0.853-3.413l13.653-13.653-13.653-13.653c-0.853-0.853-0.853-1.707-0.853-3.413v-34.135c-1e-3 -40.106 32.426-72.533 72.532-72.533s72.533 32.427 72.533 72.533v119.47c0 0.853-0.853 2.56-0.853 3.413l-13.653 13.653 13.653 13.653c0.853 0.853 0.853 1.707 0.853 3.413v136.53c0 0.853-0.853 2.56-0.853 3.413l-34.133 34.133c-1.707 1.707-4.267 1.707-5.973 0-1.707-1.707-1.707-4.267 0-5.973l33.28-33.28v-90.453l-59.733 59.733v168.96c-1.707 2.56-3.414 4.266-5.974 4.266zm4.267-277.33v92.16l59.733-59.733v-30.72l-16.213-16.213c-1.707-1.707-1.707-4.267 0-5.973l16.213-16.213v-107.52l-59.733 59.733v84.48zm-68.267 32.427 59.733 59.733v-90.453l-59.733-59.733v90.453zm0-102.4 59.733 59.733v-177.49c0-2.56 1.707-4.267 4.267-4.267s4.267 1.707 4.267 4.267v92.16l59.733-59.733c-0.853-34.133-29.013-62.293-64-62.293s-64 29.013-64 64v32.427l16.213 16.213c1.707 1.707 1.707 4.267 0 5.973l-16.213 16.213v12.8zm-89.6 347.31h-204.8c-21.333 0-38.4-17.067-38.4-38.4v-85.333c0-40.107 32.427-72.533 72.533-72.533h12.8v-25.6h-12.8c-2.56 0-4.267-1.707-4.267-4.267v-51.2c0-2.56 1.707-4.267 4.267-4.267h136.53c2.56 0 4.267 1.707 4.267 4.267v51.2c0 2.56-1.707 4.267-4.267 4.267h-12.8v25.6h12.8c40.107 0 72.533 32.427 72.533 72.533 0 2.56-1.707 4.267-4.267 4.267s-4.267-1.707-4.267-4.267c0-34.987-29.013-64-64-64h-85.333c-2.56 0-4.267-1.707-4.267-4.267s1.707-4.267 4.267-4.267h64v-29.867c0-2.56 1.707-4.267 4.267-4.267h12.8v-42.665h-128v42.667h81.067c2.56 0 4.267 1.707 4.267 4.267s-1.707 4.267-4.267 4.267h-64v29.867c0 2.56-1.707 4.267-4.267 4.267h-17.066c-34.987 0-64 29.013-64 64v85.333c0 16.213 13.653 29.867 29.867 29.867h204.8c16.213 0 29.867-13.653 29.867-29.867v-46.933h-234.67c-2.56 0-4.267-1.707-4.267-4.267s1.707-4.267 4.267-4.267h238.93c2.56 0 4.267 1.707 4.267 4.267v51.2c0 21.332-17.067 38.398-38.4 38.398z"
+                                    fill="#51565F" />
+                            </svg>
+                            <span>Write article</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- main feed sort line and buttons -->
+            <div class="feed_middle">
+                <div class="sort_bar">
+                    <button>
+                        <i class="sort_bar_line draw"></i>
+                        <div class="sort_text">
+                            <span style="color: rgb(101, 101, 101); font-size: small;">Sort by:</span>
+                            <span>Top</span>
+                            <!-- caret down or arrow drop down svg -->
+
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M7 10l5 5 5-5H7z" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mainfeed ends -->
+        <!-- right sidebar starts -->
+        <div class="sidebar_right_main">
+            <div class="sidebar_right_top">
+                <div class="right_sidebar_news">
+                    <ul style="list-style-type: none;">
+                        <div>
+                            LinkedIn News
+                            <!-- "i" type image svg (copied from linkedin official page) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                                fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                <path
+                                    d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z">
+                                </path>
+                            </svg>
+                        </div>
+
+                        <li>Fears Russia plans to split Ukraine<span>
+                                5h ago • 772,311 readers</span></li>
+                        <li>More jobs in engg, healthcare, telecom<span>17h ago</span></li>
+                        <li>The latest in the startup world<span>17h ago</span></li>
+                        <li>India's noisiest cities<span>19h ago</span></li>
+                        <li>How generous are India's super rich?<span>3d ago</span></li>
+                        <li>IT/TECH hiring plans stay strong<span>3d ago</span></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="follow_list">
+                    <div class="sidebar_right_bottom_title">
+                        Add to your feed
+                        <!-- "i" type image svg (copied from linkedin official page) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                            fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                            <path
+                                d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="follow_links">
+                        <div class="img_text_footer">
+                            <div>
+                                <img width="50"
+                                    src="https://media-exp1.licdn.com/dms/image/C4D0BAQGYp3k-HxAhWg/company-logo_100_100/0/1648544482302?e=1656547200&amp;v=beta&amp;t=TO23oRDX84HLk4E2jgo9cFWvL42sl-wySbya0cbN6pI"
+                                    loading="lazy" height="50" alt="Skill Academy" id="ember657"
+                                    class="ivm-view-attr__img--centered EntityPhoto-square-5  lazy-image ember-view">
+                            </div>
+                            <p>Skill Academy<br><span>Company : E-learninng</span></p>
+                        </div>
+                        <div><button>Follow +</button></div>
+                    </div>
+                    <div class="follow_links">
+
+                        <div class="img_text_footer">
+                            <div>
+                                <img width="42"
+                                    src="https://media-exp1.licdn.com/dms/image/C4D0BAQGWZKZtM7eKJg/company-logo_100_100/0/1627388713898?e=1656547200&amp;v=beta&amp;t=PMnSo2qHPqgLujkrvbb8PZoA7GjsEGC6QdOZI5hhIn8"
+                                    loading="lazy" height="42" alt="Testbook" id="ember791"
+                                    class="ivm-view-attr__img--centered EntityPhoto-square-5  lazy-image ember-view">
+                            </div>
+                            <p>Testbook<br><span>Company : E-learning</span></p>
+                        </div>
+                        <div><button>Follow +</button></div>
+                    </div>
+                    <div class="follow_links">
+                        <div class="img_text_footer">
+                            <div>
+                                <img src="lkdicon.svg" alt="lkd icon" style="width: 48px;">
+                            </div>
+                            <div>
+                                <p>LinkedIn<br><span>Company : Internet</span></p>
+                            </div>
+                        </div>
+                        <div><button>Follow +</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right sidebar ends -->
+    </div>
+</body>
+
+</html>
