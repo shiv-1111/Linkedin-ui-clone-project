@@ -7,11 +7,17 @@ button,img,svg,span{
     cursor: pointer;
 }
 
+span:hover{
+    transform: scale(1.08);
+}
+
 
 :root{
     /* defining variables */
-
-    --blueborder: #6494edd0;     /* color for bottom borders */
+    /* color for borders */ 
+    
+    --blueborder: #6494edd0;      
+    /* --blueborder: rgb(144, 194, 28); */
 }
 
 body {
@@ -215,8 +221,8 @@ gap: 8px;
 .left_middle1:hover, .left_middle2:hover, .left_bottom:hover, .list_item:last-child:hover{
     /* background-color: rgb(245, 245, 245); */
     cursor: pointer;
-    border: 3px solid cornflowerblue;
     font-size: large;
+    border: 3px solid cornflowerblue;
     border-radius: 4px;
     transition: 0.1s;
     transform: scale(1.02);
@@ -376,7 +382,7 @@ gap: 8px;
 
 /* main feed sttyling */
 .mainfeed{
-    flex: 0.4;
+    flex: 0.45;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -402,9 +408,26 @@ gap: 8px;
     margin: 6px 0;
     background-color: rgb(104, 180, 255);
 }
+
+.post_n_img button:hover{
+    cursor: text;
+}
+
  .main_post{
      
     border: 2px ridge var(--blueborder);
+ }
+
+ .main_post:hover{
+    border: 3px solid cornflowerblue;
+    border-radius: 4px;
+    transition: 0.1s linear;
+    transform: scale(1.02);
+ }
+
+ .main_post button:hover{
+    transition: 0.1s linear;
+    transform: scale(1.03);
  }
 
 .post_buttons{
@@ -487,6 +510,10 @@ gap: 8px;
     .right_sidebar_news:hover{
         /* to add scroll bar only when user hovers over content */
         overflow-y: auto;
+        border: 3px solid cornflowerblue;
+        border-radius: 4px;
+        transition: 0.2s linear;
+        transform: scale(1.02);
         /* transition: 0.6s linear; */
     }
 
@@ -494,6 +521,13 @@ gap: 8px;
         display: flex;
         flex-direction: column;
         gap: 6px;
+    }
+    
+    .footer:hover{
+    border: 3px solid cornflowerblue;
+    border-radius: 4px;
+    transition: 0.15s;
+    transform: scale(1.02);
     }
 
     .right_sidebar_news li:hover{
@@ -592,7 +626,7 @@ gap: 8px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .main_feed_post{
@@ -600,7 +634,15 @@ gap: 8px;
         grid-template-columns: 15% 80% 5%;
         grid-template-rows: auto auto auto;
         padding: 5px;
-        row-gap: 8px;
+        row-gap: 10px;
+    }
+
+    .main_feed_post:hover{
+        
+    border: 3px solid cornflowerblue;
+    border-radius: 4px;
+    transition: 0.1s linear;
+    transform: scale(1.02);
     }
 
     /* grid spacing and styling */
@@ -648,6 +690,16 @@ gap: 8px;
     text-shadow: 0 0.5px 1px var(--blueborder);
     letter-spacing: 0.5px;
     padding: 5px;
+}
+
+.c6 button:hover{
+    font-weight: bold;
+}
+
+.main_feed_post button:hover{
+    
+    transition: 0.1s linear;
+    transform: scale(1.02);
 }
 
 .c2{
