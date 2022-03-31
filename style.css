@@ -1,14 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    transition: linear;
 }
 
 button,img,svg,span{
     cursor: pointer;
 }
 
-span:hover{
-    transform: scale(1.08);
+span:hover,img:hover{
+    transform: scale(1.07);
+    transition: 0.05s linear;
 }
 
 
@@ -208,7 +210,13 @@ header {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;          /* for making footer behave as sticky */
     
+}
+
+.left_sidebar_bottom{
+    position: sticky;    /* important */
+    top: 70px;
 }
 
 .sidebar_left{display: flex;
@@ -315,16 +323,6 @@ gap: 8px;
 }
 
 .left_bottom{
-    /* position: sticky; */
-    /* top: 300px; */
-
-    /* sticky effect of sidebar */
-
-    position: sticky;
-    top: 70px;
-
-/*  */
-
     padding: 8px 4px 8px 5px;
     display: flex;
     align-items: center;
@@ -411,6 +409,12 @@ gap: 8px;
 
 .post_n_img button:hover{
     cursor: text;
+    border-radius: 6px;
+    transition: 0.11s linear;
+}
+
+.post_n_img span:hover{
+    cursor: text;
 }
 
  .main_post{
@@ -420,7 +424,7 @@ gap: 8px;
 
  .main_post:hover{
     border: 3px solid cornflowerblue;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: 0.1s linear;
     transform: scale(1.02);
  }
@@ -496,6 +500,7 @@ gap: 8px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
     }
 
     .right_sidebar_news{
@@ -511,7 +516,7 @@ gap: 8px;
         /* to add scroll bar only when user hovers over content */
         overflow-y: auto;
         border: 3px solid cornflowerblue;
-        border-radius: 4px;
+        border-radius: 8px;
         transition: 0.2s linear;
         transform: scale(1.02);
         /* transition: 0.6s linear; */
@@ -521,11 +526,16 @@ gap: 8px;
         display: flex;
         flex-direction: column;
         gap: 6px;
+
+        /* firstly set parent right sidebar to relative and then position bottom div as sticky with top 70px w.r.t right sidebar */
+
+        position: sticky;
+        top: 70px;
     }
     
     .footer:hover{
     border: 3px solid cornflowerblue;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: 0.15s;
     transform: scale(1.02);
     }
@@ -633,14 +643,14 @@ gap: 8px;
         display: grid;
         grid-template-columns: 15% 80% 5%;
         grid-template-rows: auto auto auto;
-        padding: 5px;
+        padding: 8px;
         row-gap: 10px;
     }
 
     .main_feed_post:hover{
         
     border: 3px solid cornflowerblue;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: 0.1s linear;
     transform: scale(1.02);
     }
@@ -710,4 +720,9 @@ gap: 8px;
 .c2 span,.c5 span{
     font-size: small;
     color: #555;
+}
+
+.c4 img:hover{
+    transform: scale(1.01);
+    transition: linear;
 }
