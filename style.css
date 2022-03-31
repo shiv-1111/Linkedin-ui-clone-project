@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+button,img,svg,span{
+    cursor: pointer;
+}
+
+
 :root{
     /* defining variables */
 
@@ -174,6 +179,7 @@ header {
     position: relative;
 }
 
+
 .main_container > div div {
     background-color: white ;
 }
@@ -193,11 +199,10 @@ header {
 
 .sidebar_main_left {
     flex: 0.18;
-    /* position: sticky; */
     display: flex;
     flex-direction: column;
     gap: 30px;
-
+    
 }
 
 .sidebar_left{display: flex;
@@ -287,6 +292,7 @@ gap: 8px;
     padding-right: 4px;
     text-align: left;
     font-weight: 550;
+    
 }
 
 .left_middle2{
@@ -303,6 +309,16 @@ gap: 8px;
 }
 
 .left_bottom{
+    /* position: sticky; */
+    /* top: 300px; */
+
+    /* sticky effect of sidebar */
+
+    position: sticky;
+    top: 70px;
+
+/*  */
+
     padding: 8px 4px 8px 5px;
     display: flex;
     align-items: center;
@@ -569,3 +585,77 @@ gap: 8px;
         align-items: center;
         border-bottom: 2px ridge var(--blueborder);
     }
+
+    /* post section styling */
+
+    .main_feed_bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .main_feed_post{
+        display: grid;
+        grid-template-columns: 15% 80% 5%;
+        grid-template-rows: auto auto auto;
+        padding: 5px;
+        row-gap: 8px;
+    }
+
+    /* grid spacing and styling */
+
+    .c4,.c5, .c6{
+        grid-column: span 3;
+    }
+
+    .c4{
+        padding-top: 8px;
+        border-top: 1px solid gray;
+    }
+
+    .c5 ul{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+        
+    border-bottom: 1px solid gray;
+    }
+
+    .c5 li{
+        display: flex;
+        align-items: center;
+    }
+
+.c6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c6 button{
+    width: 20%;
+    background-color: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: monospace;
+    font-size: large;
+    /* font-weight: bold; */
+    text-shadow: 0 0.5px 1px var(--blueborder);
+    letter-spacing: 0.5px;
+    padding: 5px;
+}
+
+.c2{
+    display: flex;
+    align-items: center;
+}
+
+.c2 span,.c5 span{
+    font-size: small;
+    color: #555;
+}
