@@ -236,11 +236,10 @@ header {
     /* background-color: rgb(245, 245, 245); */
     cursor: pointer;
     font-size: large;
-    border: 3px solid cornflowerblue;
+    border: 2.5px solid cornflowerblue;
     border-radius: 4px;
-    transition: 0.1s;
+    transition: 0.2s ease;
     transform: scale(1.02);
-
 }
 
 .left_middle1:hover div {
@@ -250,6 +249,8 @@ header {
 
 .left_middle2:hover span {
     color: rgb(37, 110, 247);
+    cursor: pointer;
+    padding-left: 6px;
 }
 
 
@@ -489,7 +490,8 @@ header {
     background-color: inherit !important;
 }
 
-/* creating line bar starts */
+/* creating line bar starts */  
+/* or we can just use hr tag..this is just for experimentation */
 .sort_bar_line {
     border-top: 1.5px groove rgba(127, 125, 125, 0.544);
     width: 80%;
